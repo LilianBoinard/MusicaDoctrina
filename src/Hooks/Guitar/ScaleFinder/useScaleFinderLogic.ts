@@ -55,9 +55,6 @@ export default function useScaleFinderLogic(): UseScaleFinderLogicReturn {
         currentTuningType,
     } = useFretboardLogic();
 
-    // Log the frets coordinates for debugging purposes.
-    console.log(fretsCoordinates);
-
     // Generate the fretboard object using the current configuration and a chromatic scale in key "C".
     const fretboard: Fretboard | null = useGetScaleFretboardObject({
         scaleKey: "C",            // Base key for the scale (here, "C").
@@ -70,9 +67,6 @@ export default function useScaleFinderLogic(): UseScaleFinderLogicReturn {
         fretsCoordinates,
         nutSize,
     });
-
-    // Log the generated fretboard for debugging purposes.
-    console.log(fretboard);
 
     // Generate the chromatic scale notes using key "C".
     const chromaticScaleNotes = getChromaticScaleNotes({ scaleKey: "C" });
@@ -130,7 +124,7 @@ export default function useScaleFinderLogic(): UseScaleFinderLogicReturn {
         if (finderScaleSelectedTuningNotes.length > 0) {
             setFinderScaleSelectedTuningNotes([]);
         }
-    }, [currentTuningKey, currentTuningType, stringsCount, fretsCount, finderScaleNotes, finderScaleSelectedTuningNotes, setFinderScaleNotes, setFinderScaleSelectedTuningNotes]);
+    }, [currentTuningKey, currentTuningType, stringsCount, fretsCount]);
 
     // Return all necessary values and setters for the scale finder logic.
     return {

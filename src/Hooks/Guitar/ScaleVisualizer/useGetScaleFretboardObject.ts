@@ -16,7 +16,7 @@ const arraysEqual = (a: any[], b: any[]): boolean => {
 
 // Define the interface for the hook's input properties.
 interface UseGetScaleFretboardObjectProps {
-    scaleKey: string;     
+    scaleKey: string;
     scaleName: string; 
     tonic?: string; 
     scaleNotes?: string[]; 
@@ -114,7 +114,6 @@ const useGetScaleFretboardObject = ({
     // Generate and memoize the final fretboard object using all computed data.
     const fretboard = useMemo(() => {
         try {
-            console.log("Generated Scale Notes used for Fretboard:", generatedScaleNotes);
             return generateFretboard({
                 tuning,
                 fretsCount,
