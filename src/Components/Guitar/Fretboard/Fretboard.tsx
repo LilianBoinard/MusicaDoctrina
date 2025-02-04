@@ -80,10 +80,10 @@ const Fretboard: React.FC = () => {
 
             {/* Secondary SVG for Bottom Dot Markers */}
             <svg
-                className="block mx-auto"
+                className="block mx-auto fill-gray-950"
                 width={fretboardSize.width}
                 height="12"
-                viewBox={`0 3 ${fretboardSize.width} 12`}
+                viewBox={`0.3 3 ${fretboardSize.width} 12`}
             >
                 <DotMarkOnBottom
                     fretboardSize={fretboardSize}
