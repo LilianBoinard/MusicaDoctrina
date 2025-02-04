@@ -13,7 +13,7 @@ interface DotMarkProps {
 const DotMarkOnBottom: FC<DotMarkProps> = ({fretboardSize, dotMarkersList, fretsCoordinates, nutWidth}) => {
     return (
         <>
-            <rect className="fill-gray-950"
+            <rect className="fill-transparent"
                   x="0"
                   y="0"
                   ry="3"
@@ -26,7 +26,7 @@ const DotMarkOnBottom: FC<DotMarkProps> = ({fretboardSize, dotMarkersList, frets
                     <circle
                         key={`dot-${fret}`}
                         id={`dot-${fret}`}
-                        className="fill-indigo-500"
+                        className="fill-gray-950 dark:fill-indigo-500"
                         cx={((fretsCoordinates[fret] + nutWidth) + (fretsCoordinates[fret - 1] + nutWidth)) / 2}
                         cy="8"
                         r="3"
@@ -35,7 +35,7 @@ const DotMarkOnBottom: FC<DotMarkProps> = ({fretboardSize, dotMarkersList, frets
                     <g
                         key={`dot-${fret}`}
                         id={`dots-${fret}`}
-                        className="fill-indigo-500">
+                        className="fill-gray-950 dark:fill-indigo-500">
                         <circle
                             cx={(((fretsCoordinates[fret] + nutWidth) + (fretsCoordinates[fret - 1] + nutWidth)) / 2) - 10}
                             cy="8"

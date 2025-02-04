@@ -12,9 +12,9 @@ const Neck: FC<NeckProps> = ({neckSize, nutWidth}) => {
     return (
         <>
             <rect
-                className="fill-gray-50"
+                className="fill-gray-50 stroke-2 stroke-gray-300 dark:fill-gray-50"
                 x={nutWidth}
-                ry="3"
+                ry="5"
                 width={neckSize.width}
                 height={neckSize.height}
             />

@@ -12,7 +12,7 @@ const Nut: FC<NutProps> = ({ nutSize }) => {
         <>
             <rect
                 className="fill-gray-950"
-                ry="3"
+                ry="5"
                 width={nutSize.width}
                 height={nutSize.height}
             />
