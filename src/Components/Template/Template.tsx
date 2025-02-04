@@ -11,7 +11,7 @@ export default function Template(): ReactElement {
             <TopNavbar/>
             <TabsProvider>
                 <SideMenu/>
-                <div className="p-4 pt-6 xl:pt-4 xl:ml-64 bg-gray-50 dark:bg-gray-900">
+                <div className="p-4 pt-6 xl:pt-4 xl:ml-64 bg-gray dark:bg-gray-900">
                     <OutletContent/>
                     <Footer/>
                 </div>
