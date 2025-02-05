@@ -16,7 +16,7 @@ export default function Guitar(): ReactElement {
 
     return (
         <>
-            <div className="flex flex-auto gap-5">
+            <div className="flex flex-auto gap-6">
                 <h1 className="font-medium text-4xl dark:text-white">Guitar Fretboard Tools</h1>
                 <SettingsButton
                     openFretboardSettingsModal={openFretboardSettingsModal}

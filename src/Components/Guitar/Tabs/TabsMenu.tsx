@@ -68,7 +68,7 @@ const TabsMenu: FC = () =>  {
                     )}
                 </Tabs.Item>
 
-                <Tabs.Item disabled title="Chrods Visualizer">
+                <Tabs.Item disabled title="Chords Visualizer">
                     <span className="font-medium text-gray-800 dark:text-white">Chords Visualizer associated content</span>
                 </Tabs.Item>
 
