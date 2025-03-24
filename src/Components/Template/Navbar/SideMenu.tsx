@@ -38,6 +38,7 @@ export default function SideMenu(): ReactElement {
                                 <span className="ms-3">Home</span>
                             </a>
                         </li>
+                        <div className="space-y-2 font-medium border-t border-gray-200 dark:border-gray-700"></div>
                         <li>
                             <button type="button"
                                     className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
@@ -45,15 +46,15 @@ export default function SideMenu(): ReactElement {
                                 <svg viewBox="0 -0.5 17 17" version="1.1" fill="currentColor"
                                      xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                                      className="w-8 h-8 flex-shrink-0 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">
-                                        <path
-                                            d="M16.781,0.959 L16.047,0.223 C15.735,-0.09 15.371,-0.00699999998 15.095,0.269 L12.806,2.564 C12.562,2.809 12.457,3.093 12.678,3.4 L9.324,6.763 C8.199,5.975 6.791,5.947 5.965,6.776 C5.722,7.02 5.049,7.822 4.951,8.144 C4.877,8.387 4.224,8.791 3.918,8.787 C3.129,8.78 2.388,9.041 1.84,9.591 C0.593,10.843 0.824,13.11 2.361,14.653 C3.9,16.193 6.159,16.427 7.406,15.174 C7.956,14.624 8.217,13.882 8.209,13.089 C8.205,12.783 8.623,12.125 8.873,12.046 C9.188,11.947 10.121,11.364 10.359,11.127 C11.177,10.306 11.156,8.915 10.392,7.793 L13.607,4.335 C13.916,4.561 14.23,4.414 14.476,4.168 L16.765,1.874 C17.041,1.596 17.096,1.274 16.781,0.959 L16.781,0.959 Z M7.512,11.133 C6.627,11.133 5.907,10.421 5.907,9.541 C5.907,8.66 6.628,7.948 7.512,7.948 C8.396,7.948 9.116,8.66 9.116,9.541 C9.115,10.421 8.396,11.133 7.512,11.133 L7.512,11.133 Z"
-                                        />
+                                    <path
+                                        d="M16.781,0.959 L16.047,0.223 C15.735,-0.09 15.371,-0.00699999998 15.095,0.269 L12.806,2.564 C12.562,2.809 12.457,3.093 12.678,3.4 L9.324,6.763 C8.199,5.975 6.791,5.947 5.965,6.776 C5.722,7.02 5.049,7.822 4.951,8.144 C4.877,8.387 4.224,8.791 3.918,8.787 C3.129,8.78 2.388,9.041 1.84,9.591 C0.593,10.843 0.824,13.11 2.361,14.653 C3.9,16.193 6.159,16.427 7.406,15.174 C7.956,14.624 8.217,13.882 8.209,13.089 C8.205,12.783 8.623,12.125 8.873,12.046 C9.188,11.947 10.121,11.364 10.359,11.127 C11.177,10.306 11.156,8.915 10.392,7.793 L13.607,4.335 C13.916,4.561 14.23,4.414 14.476,4.168 L16.765,1.874 C17.041,1.596 17.096,1.274 16.781,0.959 L16.781,0.959 Z M7.512,11.133 C6.627,11.133 5.907,10.421 5.907,9.541 C5.907,8.66 6.628,7.948 7.512,7.948 C8.396,7.948 9.116,8.66 9.116,9.541 C9.115,10.421 8.396,11.133 7.512,11.133 L7.512,11.133 Z"
+                                    />
 
                                 </svg>
                                 <span
                                     className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Guitar</span>
                                 <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                     fill="none" viewBox="0 0 10 6" >
+                                     fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                           strokeWidth="2" d="m1 1 4 4 4-4"/>
                                 </svg>
@@ -96,16 +97,16 @@ export default function SideMenu(): ReactElement {
                         <li>
                             <a href="#"
                                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                <CgPiano className="w-7 h-7 flex-shrink-0 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor"/>
+                                <CgPiano
+                                    className="w-7 h-7 flex-shrink-0 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                    fill="currentColor"/>
                                 <span className="flex-1 ms-3 whitespace-nowrap">Piano</span>
                                 <span
                                     className="inline-flex items-center justify-center ms-3 px-2 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">Soon</span>
                             </a>
                         </li>
                     </ul>
-                    <ul className="pt-4 mt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
-
-                    </ul>
+                    <div className="pt-4 mt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700"></div>
                     <div id="dropdown-cta" className="p-4 mt-6 rounded-lg bg-blue-50 dark:bg-blue-900" role="alert">
                         <div className="flex items-center mb-3">
                         <span
