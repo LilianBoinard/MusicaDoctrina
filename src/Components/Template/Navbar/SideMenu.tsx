@@ -25,7 +25,7 @@ export default function SideMenu(): ReactElement {
                             <a onClick={() => {
                                 navigate('./')
                             }}
-                               className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                               className="flex items-center p-2 cursor-pointer text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                 <svg
                                     className="w-[28px] h-[28px] flex-shrink-0 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                     aria-hidden="true"
@@ -125,8 +125,8 @@ export default function SideMenu(): ReactElement {
                         <p className="mb-3 text-sm text-blue-800 dark:text-blue-400">
                             Preview the Best Musical Theory Tool of the Future
                         </p>
-                        <a className="text-sm text-blue-800 underline font-medium hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300"
-                           onClick={() => navigate('/About/')}>About MusicaDoctrina</a>
+                        <button className="text-sm text-blue-800 underline font-medium hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300"
+                           onClick={() => navigate('/About/')}>About MusicaDoctrina</button>
                     </div>
                 </div>
             </aside>

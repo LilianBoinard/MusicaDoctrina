@@ -24,7 +24,7 @@ export default function TopNavbar(): ReactElement {
                                           d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
                                 </svg>
                             </button>
-                            <a onClick={() => {navigate('./')}} className="flex ms-1 md:me-24">
+                            <a onClick={() => {navigate('./')}} className="flex ms-1 cursor-pointer md:me-24">
                                 <SiMusicbrainz className="w-9 h-9 flex-shrink-0 text-black dark:text-gray-100" fill="currentColor"/>
                                 <span
                                     className="self-center -translate-y-0.5 text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">MDoctrina</span>
