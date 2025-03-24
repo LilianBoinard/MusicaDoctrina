@@ -35,7 +35,7 @@ export default function TopNavbar(): ReactElement {
                         <div className="flex items-center">
                             <div className="flex items-center ms-3">
                                 <div>
-                                    <DarkThemeToggle className="pb-0 pt-0" />
+                                    <DarkThemeToggle className=" space-x-1 space-y-1" />
                                 </div>
                             </div>
                         </div>
