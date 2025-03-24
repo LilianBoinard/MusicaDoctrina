@@ -25,7 +25,7 @@ const Fretboard: React.FC = () => {
     } = useFretboardLogic();
 
     return (
-        <div className="overflow-x-auto scrollbar scrollbar-thumb-black scrollbar-track-transparent relative mt-10 mb-10">
+        <div className="overflow-x-auto scrollbar scrollbar-thumb-black dark:scrollbar-thumb-gray-700 scrollbar-track-transparent relative mt-10 mb-10">
             {/* Main SVG for the Fretboard */}
             <svg
                 className="block mx-auto"
