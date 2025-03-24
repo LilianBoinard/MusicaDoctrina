@@ -12,8 +12,9 @@ interface FretboardSettingsModalProps {
 }
 
 const FretboardSettingsModal: FC<FretboardSettingsModalProps> = ({
-    openFretboardSettingsModal,
-    setOpenFretboardSettingsModal,}) => {
+                                                                     openFretboardSettingsModal,
+                                                                     setOpenFretboardSettingsModal,
+                                                                 }) => {
 
     // Using the hook
     const {
@@ -32,23 +33,28 @@ const FretboardSettingsModal: FC<FretboardSettingsModalProps> = ({
     return (
         <>
             <Modal show={openFretboardSettingsModal} onClose={() => setOpenFretboardSettingsModal(false)}>
+
                 <Modal.Header>Fretboard Settings</Modal.Header>
-                <Modal.Body>
-                    <div className="grid grid-rows mt-7 gap-10">
-                        <div className="flex flex-auto gap-7">
+                <Modal.Body >
+                    <div className="grid grid-cols-2 place-content-center gap-4 ">
+                        <div>
                             <TuningInput
                                 currentTuningKey={currentTuningKey}
                                 setCurrentTuningKey={setCurrentTuningKey}
                                 currentTuningType={currentTuningType}
                                 setCurrentTuningType={setCurrentTuningType}/>
+                        </div>
+                        <div>
+                            <StringsCountInput
+                                stringsCount={stringsCount}
+                                setStringsCount={setStringsCount}/>
+                        </div>
+                        <div>
                             <ShowNotesOnBoardInput
                                 showNotesOnBoard={showNotesOnBoard}
                                 setShowNotesOnBoard={setShowNotesOnBoard}/>
                         </div>
-                        <div className="flex flex-auto gap-7">
-                            <StringsCountInput
-                                stringsCount={stringsCount}
-                                setStringsCount={setStringsCount}/>
+                        <div>
                             <FretsCountInput
                                 fretsCount={fretsCount}
                                 setFretsCount={setFretsCount}/>
